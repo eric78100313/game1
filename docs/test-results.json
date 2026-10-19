@@ -31,7 +31,7 @@
     {
       "id": 2,
       "ammo": 7,
-      "damage": 34.280007805498826,
+      "damage": 34.29132773352285,
       "duration": 3,
       "reloaded": 8
     },
@@ -52,7 +52,7 @@
     {
       "id": 5,
       "ammo": 0,
-      "damage": 137.06000009179115,
+      "damage": 136.2072600722313,
       "duration": 3.5,
       "reloaded": 1
     }
@@ -62,7 +62,7 @@
     "body": 25
   },
   "economy": {
-    "repaired": 700,
+    "repaired": 800,
     "parts": 40,
     "built": 1,
     "remaining": 20,
@@ -76,10 +76,10 @@
     "score": 100
   },
   "ai": {
-    "moved": 20.8,
+    "moved": 20.9,
     "bossStage": 2,
     "summons": 4,
-    "coreDamage": 21.600000000000023
+    "coreDamage": 16.200000000000045
   },
   "campaign": {
     "waves": 30,

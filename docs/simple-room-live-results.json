@@ -1,0 +1,7 @@
+{
+  "status": "blocked",
+  "scope": "Actual bundled PeerJS and real public broker request; no network mock",
+  "message": "房號服務已斷線；已連上的隊友仍可遊玩，新隊友請稍後重試。",
+  "errors": [],
+  "networkEvidence": "curl to https://0.peerjs.com/ returned proxy CONNECT 403"
+}

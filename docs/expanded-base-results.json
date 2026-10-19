@@ -1,0 +1,85 @@
+{
+  "passed": [
+    "Space jumps during preparation without starting combat",
+    "72x84 map has six-plus heights; double jump lands on a 2m crate and walking off falls to floor",
+    "Six unique weapon models, four distinct support buildings, stronger facilities and two starting sentries",
+    "Starting sentry actually kills a visible attacker and awards player resources",
+    "T support selects weakest facility, teleports within repair range and enforces 12s cooldown",
+    "Destroyed facilities retain visible landmark and repair label",
+    "Explosion deals real damage and creates 1.7s fireball, shock ring, debris, smoke and light",
+    "Tactical map labels five facilities and exposes five support destination buttons",
+    "Old save preserves damage ratio and credits, upgrades layout, restores sentries and refunds obstructed construction"
+  ],
+  "terrain": {
+    "landed": {
+      "x": -7,
+      "z": 6.000000000000014,
+      "y": 2,
+      "jumps": 0
+    },
+    "left": {
+      "x": 2.9999999999999933,
+      "z": 6.000000000000014,
+      "y": 0
+    },
+    "width": 72,
+    "depth": 84,
+    "heights": [
+      2,
+      2.8,
+      1.6,
+      0.65,
+      1.3,
+      2.2,
+      3.1,
+      2.3,
+      1.2,
+      1,
+      1.4,
+      3.6,
+      3.8,
+      2.5
+    ]
+  },
+  "support": {
+    "distance": 5,
+    "cd": 12,
+    "repaired": 400,
+    "parts": 40,
+    "secondDistance": 5
+  },
+  "deadLabel": {
+    "visible": true,
+    "hp": 0
+  },
+  "blast": {
+    "enemy": -70,
+    "duration": 1.7,
+    "pieces": 27,
+    "ring": true,
+    "light": true
+  },
+  "guard": {
+    "hp": -3.6000000000000014,
+    "kills": 1,
+    "cash": 525
+  },
+  "migrated": {
+    "f": {
+      "name": "通訊中心",
+      "tag": "COMMS",
+      "x": -16,
+      "z": -14,
+      "max": 650,
+      "color": 6934527,
+      "icon": "⌁",
+      "hp": 325
+    },
+    "map": 2,
+    "sentries": 2,
+    "cash": 777,
+    "parts": 60,
+    "defenses": 0
+  },
+  "errors": []
+}

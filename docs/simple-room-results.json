@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "UI and transport adapter using deterministic PeerJS fixtures; not real networking",
+  "passed": [
+    "Host creates six-digit room and sees no SDP text areas; launch waits for teammate",
+    "Guest validates six-digit code and connects to matching broker peer without answer code",
+    "PeerJS adapter carries welcome, identity and real host start state through deterministic protocol fixtures",
+    "Leaving room destroys broker and returns to solo-capable menu",
+    "Broker errors show actionable message and manual WebRTC fallback remains available"
+  ],
+  "errors": []
+}
