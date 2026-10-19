@@ -14,16 +14,18 @@ python3 -m http.server 8000
 
 ## 遊玩
 
-已修正上下視角、蹲下時射擊對齊與設施尋路卡住問題，增加可見曳光彈、命中閃光、傷害數字、火花與命中音效。
+已修正上下視角、蹲下時射擊對齊與設施尋路卡住問題，增加可見曳光彈、命中閃光、傷害數字、火花與命中音效。遠距離敵人會追擊可見玩家；槍械可覆蓋基地，遮擋依照 3D 高度判斷。六種敵人各有獨立輪廓與裝備。
 
 - WASD 或方向鍵移動，滑鼠控制視角，左鍵射擊，右鍵瞄準。
 - R 換彈，1 / 2 切換兩把武器，Shift 奔跑，Ctrl 蹲下；奔跑中按 Ctrl 滑鏟，Space 二段跳。
-- 準備階段按 Space 提前開戰；B 開啟補給、武器、改裝與建造選單。
+- 準備階段按 Space 提前開戰；B 開啟補給、武器、改裝與建造選單，戰鬥中也能瀏覽和購買。信用點不足、已持有或補給站損毀時會顯示具體原因。
 - F 在前方部署砲塔，E 修復附近受損設施，G 手榴彈，Q 使用設定中選取的技能。
-- Tab 戰術地圖，Esc 暫停選單。單人商店、地圖、設定會暫停；多人持續戰鬥。
+- H 開啟七章教學手冊；亦可從主選單、HUD 按鈕或暫停選單進入。Tab 戰術地圖，Esc 暫停選單。單人商店、地圖、設定會暫停；多人持續戰鬥。
 - 每十波一隻 Boss，三區共 30 波；核心被摧毀即失敗。每波結算自動存檔；戰鬥中手動儲存會回存本波開始前的檢查點。
 
 ## 真正多人合作
+
+先在設定輸入玩家名稱（最多 16 字）；合作時會在隊友頭頂及 HUD 顯示名稱。名稱訊息處理與畫面已透過測試資料驗證，實際跨裝置連線仍未通過下述環境限制。
 
 1. 房主選「多人合作 → 建立房間 → 產生新隊員邀請碼」。
 2. 隊員在自己的瀏覽器選「加入房間」，貼上邀請碼，產生回覆碼交給房主。
@@ -57,6 +59,8 @@ python3 -m http.server 8000
 ![主選單](docs/01-main-menu.png)
 ![防守畫面](docs/02-defense.png)
 ![裝備商店](docs/03-supply.png)
+![敵人造型與隊友名稱（測試場景）](docs/06-enemies-teammate.png)
+![遊戲內教學手冊](docs/07-field-manual.png)
 
 ## 重跑測試
 
@@ -67,6 +71,7 @@ node tests/acceptance.cjs
 node tests/multiplayer.cjs
 node tests/offline.cjs
 node tests/controls-combat.cjs
+node tests/arsenal-team-distance.cjs
 ```
 
 若尚未安裝 Playwright，可於儲存庫外安裝：`npm install --prefix /tmp/bastion-test-tools playwright`，並設定 `NODE_PATH=/tmp/bastion-test-tools/node_modules`。測試會更新 `docs` 中的截圖及結果 JSON。單人測試透過測試頁面注入內部函式介面，驗證實際程式邏輯；正式 HTML 僅有唯讀診斷資料，不含跳關或作弊控制。多人測試使用兩個獨立 Chromium 程序嘗試真正 WebRTC，並非模擬訊息；目前雲端政策導致無 ICE 路徑，回傳退出碼 2（blocked），不視為通過。

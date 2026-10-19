@@ -31,7 +31,7 @@
     {
       "id": 2,
       "ammo": 7,
-      "damage": 77.40000000000146,
+      "damage": 34.280007805498826,
       "duration": 3,
       "reloaded": 8
     },
@@ -76,7 +76,7 @@
     "score": 100
   },
   "ai": {
-    "moved": 20.84999999999995,
+    "moved": 20.8,
     "bossStage": 2,
     "summons": 4,
     "coreDamage": 21.600000000000023

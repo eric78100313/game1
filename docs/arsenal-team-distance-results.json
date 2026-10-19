@@ -1,0 +1,87 @@
+{
+  "passed": [
+    "48m target and head above low cover are hittable; low and tall cover correctly block body shots",
+    "Enemy sees and pursues a player 48m away, then stops to attack within weapon range",
+    "Enemy next to obstacle realigns to a walkable node and reaches core instead of stalling",
+    "Combat arsenal tab opens and sniper purchase consumes credits and replaces active slot",
+    "Owned weapon and damaged supply station show specific disabled reasons",
+    "H opens and closes seven-chapter manual; all chapter buttons work",
+    "Settings save and persist editable player name",
+    "Identity-message handler updates actual teammate nameplate and HUD with safe text (protocol fixture, not network test)",
+    "All six enemy types have distinct geometry, silhouettes and valid head hitboxes"
+  ],
+  "shots": [
+    {
+      "name": "48m exposed target",
+      "damage": 45
+    },
+    {
+      "name": "head above low crate",
+      "damage": 45
+    },
+    {
+      "name": "crouched shot blocked by low crate",
+      "damage": 0
+    },
+    {
+      "name": "tall crate blocks shot",
+      "damage": 0
+    }
+  ],
+  "pursuit": {
+    "mid": {
+      "x": 20,
+      "z": -6.5,
+      "behavior": "追擊玩家",
+      "distance": 30.5
+    },
+    "end": {
+      "x": 20,
+      "z": 11,
+      "behavior": "攻擊玩家",
+      "distance": 13,
+      "attackPulse": 0
+    }
+  },
+  "replan": {
+    "distance": 3.198849480113138,
+    "core": 869.9999999999989
+  },
+  "names": {
+    "state": "星際隊友 <b>",
+    "label": "星際隊友 <b>"
+  },
+  "models": [
+    {
+      "type": 0,
+      "variant": 0,
+      "heads": 1
+    },
+    {
+      "type": 1,
+      "variant": 1,
+      "heads": 1
+    },
+    {
+      "type": 2,
+      "variant": 2,
+      "heads": 1
+    },
+    {
+      "type": 3,
+      "variant": 3,
+      "heads": 1
+    },
+    {
+      "type": 4,
+      "variant": 4,
+      "heads": 1
+    },
+    {
+      "type": 5,
+      "variant": 5,
+      "heads": 1
+    }
+  ],
+  "errors": []
+}
