@@ -1,0 +1,24 @@
+{
+  "status": "blocked",
+  "browsers": 2,
+  "reason": "No ICE candidates; managed browser policy WebRtcIPHandling=disable_non_proxied_udp",
+  "diagnostics": [
+    {
+      "connection": "closed",
+      "ice": "closed",
+      "gathering": "complete",
+      "localCandidateCount": 0,
+      "remoteCandidateCount": 0
+    }
+  ],
+  "passed": [],
+  "unrun": [
+    "data channel",
+    "shared start",
+    "movement",
+    "weapon switch",
+    "construction",
+    "enemy synchronization",
+    "disconnect handling"
+  ]
+}

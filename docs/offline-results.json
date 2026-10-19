@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": [
+    "single HTML document fulfilled in offline browser (file:// blocked by cloud policy)",
+    "offline WebGL startup",
+    "single-player start",
+    "interactive shop opens",
+    "zero subresource HTTP requests",
+    "no uncaught errors"
+  ],
+  "errors": []
+}
