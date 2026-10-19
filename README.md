@@ -32,6 +32,8 @@ python3 -m http.server 8000
 
 ## GitHub Pages 發布
 
+程式已成功推送至 `main`；Pages 設定與公開存取尚未驗證，詳見 [發布紀錄](docs/發布紀錄.md)。
+
 目標網址：`https://eric78100313.github.io/game1/`（須先完成 Pages 設定及部署，請勿在驗證前當成已公開網址）。
 
 程式碼在 GitHub 的 `main` 後，前往儲存庫 **Settings → Pages → Build and deployment**：
