@@ -10,11 +10,13 @@
 python3 -m http.server 8000
 ```
 
-需要支援 WebGL 的新版 Chrome、Edge 或 Firefox。建議使用鍵盤及滑鼠；手機僅可瀏覽選單，未提供觸控遊戲控制。若不能鎖定滑鼠，可按住畫面拖曳或用方向鍵控制視角。
+需要支援 WebGL 的新版 Chrome、Edge 或 Firefox。建議使用鍵盤及滑鼠；手機僅可瀏覽選單，未提供觸控遊戲控制。若不能鎖定滑鼠，可按住右鍵拖曳控制視角；方向鍵與 WASD 一樣用來移動。
 
 ## 遊玩
 
-- WASD 移動，滑鼠控制視角，左鍵射擊，右鍵瞄準。
+已修正上下視角、蹲下時射擊對齊與設施尋路卡住問題，增加可見曳光彈、命中閃光、傷害數字、火花與命中音效。
+
+- WASD 或方向鍵移動，滑鼠控制視角，左鍵射擊，右鍵瞄準。
 - R 換彈，1 / 2 切換兩把武器，Shift 奔跑，Ctrl 蹲下；奔跑中按 Ctrl 滑鏟，Space 二段跳。
 - 準備階段按 Space 提前開戰；B 開啟補給、武器、改裝與建造選單。
 - F 在前方部署砲塔，E 修復附近受損設施，G 手榴彈，Q 使用設定中選取的技能。
@@ -64,6 +66,7 @@ python3 -m http.server 8000
 node tests/acceptance.cjs
 node tests/multiplayer.cjs
 node tests/offline.cjs
+node tests/controls-combat.cjs
 ```
 
 若尚未安裝 Playwright，可於儲存庫外安裝：`npm install --prefix /tmp/bastion-test-tools playwright`，並設定 `NODE_PATH=/tmp/bastion-test-tools/node_modules`。測試會更新 `docs` 中的截圖及結果 JSON。單人測試透過測試頁面注入內部函式介面，驗證實際程式邏輯；正式 HTML 僅有唯讀診斷資料，不含跳關或作弊控制。多人測試使用兩個獨立 Chromium 程序嘗試真正 WebRTC，並非模擬訊息；目前雲端政策導致無 ICE 路徑，回傳退出碼 2（blocked），不視為通過。

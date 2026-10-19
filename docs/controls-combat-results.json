@@ -1,0 +1,115 @@
+{
+  "passed": [
+    "All four arrow keys move in expected directions",
+    "Camera and firing vector match when looking up and sideways",
+    "Looking down produces downward camera direction",
+    "Enemies from 12 starting positions navigate around obstacles and attack core",
+    "Real animation loop spawns enemies and advances their position",
+    "A real raycast hit creates damage, enemy flash, floating number, particles and thick tracer"
+  ],
+  "routes": [
+    {
+      "start": [
+        -18,
+        -24
+      ],
+      "distance": 3.061193248082064,
+      "damage": 109.20000000000095
+    },
+    {
+      "start": [
+        -7,
+        -24
+      ],
+      "distance": 3.0546417831718915,
+      "damage": 124.80000000000109
+    },
+    {
+      "start": [
+        0,
+        -24
+      ],
+      "distance": 3.1500000000000474,
+      "damage": 135.20000000000118
+    },
+    {
+      "start": [
+        7,
+        -24
+      ],
+      "distance": 3.055382837565314,
+      "damage": 124.80000000000109
+    },
+    {
+      "start": [
+        18,
+        -24
+      ],
+      "distance": 3.060893052455224,
+      "damage": 109.20000000000095
+    },
+    {
+      "start": [
+        -18,
+        24
+      ],
+      "distance": 3.060893052446278,
+      "damage": 109.20000000000095
+    },
+    {
+      "start": [
+        -7,
+        24
+      ],
+      "distance": 3.0509539737724287,
+      "damage": 124.80000000000109
+    },
+    {
+      "start": [
+        0,
+        24
+      ],
+      "distance": 3.1500000000000474,
+      "damage": 135.20000000000118
+    },
+    {
+      "start": [
+        7,
+        24
+      ],
+      "distance": 3.05121984612691,
+      "damage": 124.80000000000109
+    },
+    {
+      "start": [
+        18,
+        24
+      ],
+      "distance": 3.0608943520723524,
+      "damage": 109.20000000000095
+    },
+    {
+      "start": [
+        7,
+        -8
+      ],
+      "distance": 3.054116239441101,
+      "damage": 150.80000000000132
+    },
+    {
+      "start": [
+        -7,
+        8
+      ],
+      "distance": 3.0511859030875854,
+      "damage": 150.80000000000132
+    }
+  ],
+  "hit": {
+    "hp": 57.6,
+    "flash": 0.2,
+    "number": true,
+    "tracer": true
+  },
+  "errors": []
+}
